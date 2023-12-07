@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC>
+
+<html>
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+	
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script type="text/javascript" src="index.js"></script>
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+
+    <title>Zhaoyang - Portfolio</title>
+
+</head>
+
+
+
+<body class="flexibleContainer">
+    <div class="sideBar">
+        <img src="mainLogo.jpg" class="frontImg" alt="Photo">
+        <h2>Zhaoyang Rui</h2>
+        <h3>Student at University of Toronto</h3>
+
+        <button type="button" id="buttonHome" class="active" onclick="scrollFunc(this, 'home')">HOME</button>
+        <button type="button" id="buttonAbut" onclick="scrollFunc(this, 'aboutme')">ABOUT</button>
+        <button type="button" id="buttonPortfolio" onclick="scrollFunc(this, 'portfolio')">PORTFOLIO</button>
+        <button type="button" id="buttonExperience" onclick="scrollFunc(this, 'experience')">EXPERIENCE</button>
+        <!-- <button type="button" id="buttonContact" onclick="scrollFunc(this, 'contact')">CONTACT</button> -->
+
+    </div>
+    <div class="flexible mainBody" id="myBody">
+        <section id="home">
+            <div style="background-image: url(/istockphoto-1088741344-612x612.jpg); width: 100%; height: 100%;     background-size: cover;"></div>
+            <span class="frontImgText">Hi!<br> I am Zhaoyang <br>And I am a future Engineer</span>
+        </section>
+        <section id="aboutme">
+            <div class="bodyWText">
+                <span>About Me</span>
+                <h2>Who am I?</h3>
+                <p>Hi, my name is Zhaoyang Rui, I am a second-year mechanical engineering student at the University of Toronto. I outline my career path by pursuing higher education and working in a research team in the field of aerospace engineering in the future. I claim my strengths as problem analysis and lifetime learning. I found that these qualities are two of the main strengths that insist on helping to achieve the career path I built for the future. Lifetime learning is required for pursuing higher education as the world is changing every day and new technology is appearing with time. I managed to do lifetime learning. While technic-based work often requires problem analysis it is necessary to analyze the problem first to find the solution. Also, I take part in the University of Toronto aerospace design team which aids in accomplishing my planned career path.</p>
+                <div class="flexibleContainer">
+                    <div class="flexible margin-40">
+                            <div class="services color-1">
+                                <span class="icon2"><i class="bi-pencil-fill"></i></span>
+                                <h3>Drafting</h3>
+                            </div>
+                    </div>
+                    <div class="flexible margin-40">
+                            <div class="services color-2">
+                                <span class="icon2"><i class="bi-building"></i></span>
+                                <h3>Design</h3>
+                        </div>
+                    </div>
+                    <div class="flexible margin-40">
+                            <div class="services color-3">
+                                <span class="icon2"><i class="bi-gear-fill"></i></span>
+                                <h3>Engineering</h3>
+                            </div>
+                    </div>
+                    <div class="flexible margin-40">
+                            <div class="services color-4">
+                                <span class="icon2"><i class="bi-calculator-fill"></i></span>
+                                <h3>Calculating</h3>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" style="height: auto;">
+            <div class="bodyWText">
+                <span>Portfolio</span>
+                <h2>What do I do?</h2>
+                <h3>MIE243</h3>
+                <div class="flexibleContainer" style="gap: 10px;">
+                    <div class="flexible margin-20">
+                        <h3>3D Printer</h3>
+                        <div class="box">
+                            <img src="project3dPrinterLogo.PNG" alt="">
+                            <a href="displayProjects/project3dPrinter.html" class="showme">Show me</a>
+                        </div>
+                    </div>
+                    <div class="flexible margin-20">
+                        <h3>Screwdriver</h3>
+                        <div class="box">
+                            <img src="project7 Logo.jpg" alt="">
+                            <a href="displayProjects/project7.html" class="showme">Show me</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flexibleContainer" style="gap: 10px;">
+                    <div class="flexible margin-20">
+                        <h3>Gear Box</h3>
+                        <div class="box">
+                            <img src="project5 Logo.jpg" alt="">
+                            <a href="displayProjects/gearbox.html" class="showme">Show me</a>
+                        </div>
+                    </div>
+                    <div class="flexible margin-20"></div>
+                </div>
+                
+                <h3>Other Course Projects</h3>
+                <div class="flexibleContainer" style="gap: 10px;">
+                    <div class="flexible margin-20">
+                        <h3>Python</h3>
+                        <div class="box">
+                            <img src="pythonLogo.jpg" alt="">
+                            <a href="displayProjects/python.html" class="showme">Show me</a>
+                        </div>
+                    </div>
+                    <div class="flexible margin-20"></div>
+                </div>
+                <div class="flexibleContainer" style="gap: 10px;">
+                    
+                    <div class="flexible margin-20"></div>
+                    <div class="flexible margin-20"></div>
+                </div>
+                <h3>Extra-Curricular Activity</h3>
+                <div class="flexibleContainer" style="gap: 10px;">
+                    <div class="flexible margin-20">
+                        <h3>Wood-Cutting Design</h3>
+                        <div class="box">
+                            <img src="extraProject1Logo.PNG" alt="">
+                            <a href="displayProjects/woodCutterProjectExtra.html" class="showme">Show me</a>
+                        </div>
+                    </div>
+                    <div class="flexible margin-20"></div>
+                </div>
+            </div>
+        </section>
+        <section id="experience" style="height: auto;">
+            <div class="bodyWText">
+                <span>My Experience</span>
+                <h2>Education</h2>
+                <div style="border: 1px solid lightgrey; padding: 5px 20px; border-radius: 10px;">
+                    <h3>Rosemont Technology Centre <span style="float: right">2020 - 2022</span></h3>
+                    <p>Industrial Drafting, Diploma</p>
+                </div>
+                <div style="border: 1px solid lightgrey; padding: 5px 20px; border-radius: 10px; margin-top: 20px">
+                    <h3>University of Toronto <span style="float: right">2022 - Present</span></h3>
+                    <p>Engineering, Bachelor</p>
+                </div>
+                <h2>Work</h2>
+                <div style="border: 1px solid lightgrey; padding: 5px 20px; border-radius: 10px; margin-top: 20px">
+                    <h3>Portes Gensteel Doors <span style="float: right">Mar 2022 - Aug 2022</span></h3>
+                    <p>Industrial Drafter, Junior</p>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="contact" style="height: auto;">
+            <div class="bodyWText">
+                <span>Contact Me</span>
+                <h2>How to reach me?</h2>
+                <div style="border: 1px solid lightgrey; padding: 5px 20px; border-radius: 10px;">
+                    <h3>Phone <a style="float: right" href="tel:647-457-9391">+1 (647) 457-9391</a></h3>
+                    <h3>Email <a style="float: right" href="mailto:zhaoyang.rui@mail.utoronto.ca">zhaoyang.rui@mail.utoronto.ca</a></h3>
+                </div>
+            </div> -->
+    </div>
+</body>
+
+<script>
+    
+    let pos = 0;
+    document.addEventListener("scroll", (event) => {
+    pos = (document.documentElement.scrollTop || document.body.scrollTop);
+    if( pos >= 0 && pos <= 773){
+        setClassActive(document.querySelector("#buttonHome"))
+    }else if(pos >= 773 && pos <= 1545){
+        setClassActive(document.querySelector("#buttonAbut"))
+    }else if( pos >= 1545 && pos <= 3700){
+        setClassActive(document.querySelector("#buttonPortfolio"))
+    }else if( pos >= 3800){
+        setClassActive(document.querySelector("#buttonExperience"))
+    }
+    });
+</script>
+
+</html>
